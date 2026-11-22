@@ -1,0 +1,11 @@
+import { chromium } from 'playwright';
+const browser = await chromium.launch();
+const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
+await page.goto('http://localhost:4173');
+await page.getByRole('button', { name: /Enter live demo/i }).click();
+await page.waitForTimeout(1500);
+await page.goto('http://localhost:4173/#/analytics');
+await page.waitForTimeout(1200);
+const panels = await page.locator('section.panel').allInnerTexts();
+console.log(panels.filter(t => t.includes('CHoCH impact'))[0]);
+await browser.close();

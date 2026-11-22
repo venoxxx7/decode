@@ -1,0 +1,9 @@
+node_modules/
+data/
+demo-charts/
+shot-*.png
+test-*.mjs
+make-charts.mjs
+attach-charts.mjs
+analyze-one.mjs
+*.log

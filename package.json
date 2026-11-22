@@ -1,0 +1,25 @@
+{
+  "name": "decode",
+  "version": "1.0.0",
+  "description": "Decode — a premium AI trading journal for the V1/V2 order block strategy",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "trading",
+    "journal",
+    "ai",
+    "forex"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.3.0"
+  },
+  "devDependencies": {
+    "playwright": "^1.65.1"
+  }
+}
